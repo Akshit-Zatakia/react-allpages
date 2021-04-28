@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Akshit-Zatakia/react-allpages.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@akshit0"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
