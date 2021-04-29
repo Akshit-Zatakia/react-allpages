@@ -1,6 +1,6 @@
 # react-allpages
 
-react-allpages is an package for ReactJS. Here the login page and register page can be developed without any boilerplate code.
+react-allpages is an package for ReactJS. Here the login page, register page, Home page and other components can be developed without any boilerplate code.
 
 ## Installation
 

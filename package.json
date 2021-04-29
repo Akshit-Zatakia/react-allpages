@@ -1,6 +1,6 @@
 {
   "name": "react-allpages",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "This is for login page and register page so there is no need to write boilerplate code",
   "main": "./lib/index.js",
   "scripts": {
