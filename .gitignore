@@ -9,7 +9,7 @@
 # production
 /src
 
-webpack.config.js
+*.config.js
 
 *.tgz
 
