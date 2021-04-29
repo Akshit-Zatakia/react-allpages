@@ -12,6 +12,77 @@ npm install react-allpages
 
 ## Usage
 
+### HomeOne
+
+```python
+import "./App.css";
+import { HomeOne } from "react-allpages";
+import { BrowserRouter, Route } from "react-router-dom";
+import Login from "./login/Login";
+import Register from "./register/Register"
+
+function App() {
+  const btn = [
+    {
+      name: "Login",
+      color: "white",
+      backgroundColor: "red",
+      link: "/login",
+    },
+    {
+      name: "Register",
+      color: "white",
+      backgroundColor: "red",
+      link: "/register",
+    },
+  ];
+  return (
+    <BrowserRouter>
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/register" component={Login} />
+      <HomeOne
+        bgImage="https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Circle-Simple-Background-Image-1.jpg"
+        text="Welcome to react-allpages"
+        buttons={btn}
+      />
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+```
+
+<img src="https://user-images.githubusercontent.com/64951569/116524565-2835cb00-a8f5-11eb-90ee-7fed202fc959.png" width="500"></img>
+
+### Button
+
+```python
+import "./App.css";
+import { Button } from "react-allpages";
+
+function App() {
+  return (
+    <div className="App">
+      <Button
+        text="Get Started"
+        elevation={0.3}
+        bgColor="green"
+        color="white"
+        onBtnClick={(e) => console.log("click")}
+      />
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+<img src="https://user-images.githubusercontent.com/64951569/116528178-2241e900-a8f9-11eb-85ce-b86ee30813fa.png" width="500"></img>
+
+### RegisterPage
+
 ```python
 import { RegisterPage } from "react-allpages";
 
@@ -51,6 +122,8 @@ function App() {
 ```
 
 <img src="https://user-images.githubusercontent.com/64951569/116149661-0de6cc00-a700-11eb-9652-945bd2694f4e.png" width="500"></img>
+
+### LoginPage
 
 ```python
 import { LoginPage } from "react-allpages";

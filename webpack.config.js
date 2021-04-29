@@ -25,6 +25,11 @@ module.exports = {
     alias: {
       react: path.resolve(__dirname, "./node_modules/react"),
       "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
+      "react-router": path.resolve(__dirname, "./node_modules/react-router"),
+      "react-router-dom": path.resolve(
+        __dirname,
+        "./node_modules/react-router-dom"
+      ),
     },
   },
   externals: {
@@ -40,6 +45,18 @@ module.exports = {
       commonjs2: "react-dom",
       amd: "ReactDOM",
       root: "ReactDOM",
+    },
+    "react-router": {
+      commonjs: "react-router",
+      commonjs2: "react-router",
+      amd: "ReactRouter",
+      root: "ReactRouter",
+    },
+    "react-router-dom": {
+      commonjs: "react-router-dom",
+      commonjs2: "react-router-dom",
+      amd: "ReactRouterDOM",
+      root: "ReactRouterDOM",
     },
   },
 };
